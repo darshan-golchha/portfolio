@@ -16,71 +16,71 @@ const About = () => {
         <h3 className="subhead-text">My Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12 items-center justify-center">
           <div className="abt-box">
-            <img src="assets/icons/python.svg" alt="Python" className="w-16 h-16 btn-front rounded-xl" />
+            <img src="/assets/icons/python.svg" alt="Python" className="w-16 h-16 btn-front rounded-xl" />
             <p className="mt-4">Python</p>
           </div>
           {/* Java */}
           <div className="abt-box">
-            <img src="assets/icons/java.svg" alt="Java" className="w-16 h-16" />
+            <img src="/assets/icons/java.svg" alt="Java" className="w-16 h-16" />
             <p className="mt-4">Java</p>
           </div>
           <div className="abt-box">
-            <img src="assets/icons/javascript.svg" alt="JavaScript" className="w-16 h-16" />
+            <img src="/assets/icons/javascript.svg" alt="JavaScript" className="w-16 h-16" />
             <p className="mt-4">JavaScript</p>
           </div>
           {/* C */}
           <div className="abt-box">
-            <img src="assets/icons/c.svg" alt="C" className="w-16 h-16" />
+            <img src="/assets/icons/c.svg" alt="C" className="w-16 h-16" />
             <p className="mt-4">C</p>
           </div>
           <div className="abt-box">
-            <img src="assets/icons/html.svg" alt="HTML" className="w-16 h-16" />
+            <img src="/assets/icons/html.svg" alt="HTML" className="w-16 h-16" />
             <p className="mt-4">HTML</p>
           </div>
           <div className="abt-box">
-            <img src="assets/icons/css.svg" alt="CSS" className="w-16 h-16" />
+            <img src="/assets/icons/css.svg" alt="CSS" className="w-16 h-16" />
             <p className="mt-4">CSS</p>
           </div>
           <div className="abt-box">
-            <img src="assets/icons/react.svg" alt="React" className="w-16 h-16" />
+            <img src="/assets/icons/react.svg" alt="React" className="w-16 h-16" />
             <p className="mt-4">React</p>
           </div>
           <div className="abt-box">
-            <img src="assets/icons/mysql.svg" alt="MySQL" className="w-16 h-16" />
+            <img src="/assets/icons/mysql.svg" alt="MySQL" className="w-16 h-16" />
             <p className="mt-4">MySQL</p>
           </div>
           <div className="abt-box">
-            <img src="assets/icons/git.svg" alt="Git" className="w-16 h-16" />
+            <img src="/assets/icons/git.svg" alt="Git" className="w-16 h-16" />
             <p className="mt-4">Git</p>
           </div>
           {/* MongoDB */}
           <div className="abt-box">
-            <img src="assets/icons/mongo.svg" alt="MongoDB" className="w-16 h-16" />
+            <img src="/assets/icons/mongo.svg" alt="MongoDB" className="w-16 h-16" />
             <p className="mt-4">MongoDB</p>
           </div>
           {/* Java Spring Boot */}
           <div className="abt-box">
-            <img src="assets/icons/spring.svg" alt="Spring Boot" className="w-16 h-16" />
+            <img src="/assets/icons/spring.svg" alt="Spring Boot" className="w-16 h-16" />
             <p className="mt-4">Spring Boot</p>
           </div>
           {/* Rest API */}
           <div className="abt-box">
-            <img src="assets/icons/rest.svg" alt="Rest API" className="w-16 h-16" />
+            <img src="/assets/icons/rest.svg" alt="Rest API" className="w-16 h-16" />
             <p className="mt-4">Rest API</p>
           </div>
           {/* WebSocket */}
           <div className="abt-box">
-            <img src="assets/icons/websocket.svg" alt="WebSocket" className="w-16 h-16" />
+            <img src="/assets/icons/websocket.svg" alt="WebSocket" className="w-16 h-16" />
             <p className="mt-4">WebSocket</p>
           </div>
           {/* Tailwind CSS */}
           <div className="abt-box">
-            <img src="assets/icons/tailwindcss.svg" alt="Tailwind CSS" className="w-16 h-16" />
+            <img src="/assets/icons/tailwindcss.svg" alt="Tailwind CSS" className="w-16 h-16" />
             <p className="mt-4">Tailwind CSS</p>
           </div>
           {/* three js */}
           <div className="abt-box">
-            <img src="assets/icons/three.svg" alt="Three.js" className="w-16 h-16" />
+            <img src="/assets/icons/three.svg" alt="Three.js" className="w-16 h-16" />
             <p className="mt-4">Three.js</p>
           </div>
         </div>
@@ -108,7 +108,7 @@ const About = () => {
                   borderBottom: '12px solid #001f6f',
                 }
               }
-              icon={<img src="assets/icons/opstree.jpg" alt="O" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="/assets/icons/opstree.jpg" alt="O" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
 
               <div>
@@ -140,7 +140,7 @@ const About = () => {
                   borderBottom: '12px solid #3498db',
                 }
               }
-              icon={<img src="assets/icons/nucleus.png" alt="O" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="/assets/icons/nucleus.png" alt="O" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Software Engineering Intern</h3>
