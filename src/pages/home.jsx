@@ -45,9 +45,9 @@ const Home = () => {
     return (
         <section className='w-full h-screen relative bg-black-500'>
             <div className='absolute top-16 left-0 right-0 z-10 flex items-center justify-center gap-3'>
-                {currentStage && <div className='arw'><img src='../assets/icons/left.png' alt='left' onClick={() => touchClick("ArrowLeft")} /></div>}
+                {currentStage && <div className='arw'><img src='assets/icons/left.png' alt='left' onClick={() => touchClick("ArrowLeft")} /></div>}
                 {currentStage && <Popup currentStage={currentStage} setCurrentStage={setCurrentStage} />}
-                {currentStage && <div className='arw'><img src='../assets/icons/right.png' alt='right' onClick={() => touchClick("ArrowRight")} /></div>}
+                {currentStage && <div className='arw'><img src='assets/icons/right.png' alt='right' onClick={() => touchClick("ArrowRight")} /></div>}
             </div>
             <Canvas
                 className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}

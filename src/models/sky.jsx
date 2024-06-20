@@ -1,6 +1,6 @@
 import React, { useRef, useImperativeHandle, forwardRef } from 'react';
 import { useGLTF } from '@react-three/drei';
-import skyScene from '../assets/3D/sky.glb';
+import skyScene from 'assets/3D/sky.glb';
 
 const Sky = forwardRef(({ isRotating, moving }, ref) => {
   const skyRef = useRef();
