@@ -11,7 +11,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function Bee({currentAnimation, ...props}) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('../../assets/3D/plane.glb')
+  const { nodes, materials, animations } = useGLTF('../assets/3D/plane.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
     if (currentAnimation != null && currentAnimation != "idle") {
@@ -1853,4 +1853,4 @@ export function Bee({currentAnimation, ...props}) {
   )
 }
 
-useGLTF.preload('../../assets/3D/plane.glb')
+useGLTF.preload('../assets/3D/plane.glb')

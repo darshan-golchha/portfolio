@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useImperativeHandle, forwardRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
-import airScene from '../../assets/3D/plane.glb';
+import airScene from '../assets/3D/plane.glb';
 
 const Aircraft = forwardRef(({ isRotating, ...props }, ref) => {
   const innerRef = useRef();

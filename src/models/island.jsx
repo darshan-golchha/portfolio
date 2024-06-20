@@ -14,7 +14,7 @@ import { useModelContext } from '../components/mdlcontext';
 
 export function Model({ moving, setMoving, aircraftRef,skyRef, ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('../../assets/3D/cute_little_planet.glb')
+  const { nodes, materials, animations } = useGLTF('../assets/3D/cute_little_planet.glb')
   const { actions } = useAnimations(animations, group)
   const { gl, viewport } = useThree();
   const lastX = useRef(0);
@@ -5725,4 +5725,4 @@ export function Model({ moving, setMoving, aircraftRef,skyRef, ...props }) {
   )
 }
 
-useGLTF.preload('../../assets/3D/cute_little_planet.glb')
+useGLTF.preload('../assets/3D/cute_little_planet.glb')

@@ -30,7 +30,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="../../assets/icons/detect.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/detect.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Anomaly Detection System</h3>
@@ -63,7 +63,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="../../assets/icons/super.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/super.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>AI Severity Detector</h3>
@@ -102,7 +102,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="../../assets/icons/database.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/database.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>KBase</h3>
@@ -132,7 +132,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #001f6f',
               }}
-              icon={<img src="../../assets/icons/chat.png" alt="Conversia" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/chat.png" alt="Conversia" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Conversia</h3>
@@ -159,7 +159,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="../../assets/icons/java.svg" alt="Changemaker" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/java.svg" alt="Changemaker" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Changemaker</h3>
@@ -186,7 +186,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="../../assets/icons/twitter.svg" alt="Twitter Feed" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/twitter.svg" alt="Twitter Feed" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Twitter Feed</h3>
@@ -212,7 +212,7 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="../../assets/icons/python.svg" alt="University Rankings Analyzer" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="../assets/icons/python.svg" alt="University Rankings Analyzer" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>University Rankings Analyzer</h3>
