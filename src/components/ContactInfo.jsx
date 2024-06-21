@@ -105,27 +105,6 @@ const ContactInfo = () => {
                         >{loading ? 'Sending...' : 'Send'}</button>
                     </form>
                 </div>
-                {/* <div className='lgw:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-                    <Canvas
-                        camera={{
-                            position: [0, 0, 5],
-                            fov: 60,
-                            near: 0.1,
-                            far: 1000
-                        }}
-                    >
-                        <Suspense fallback={<Loader />}>
-                            <Bee
-                                position={[0, -0.5, 1]}
-                                rotation={[0, -0.7, 0]}
-                                scale={[1.5, 1.5, 1.5]}
-                                currentAnimation={currentAnimation}
-                            />
-                            <ambientLight intensity={0.3} />
-                            <hemisphereLight intensity={3} />
-                        </Suspense>
-                    </Canvas>
-                </div> */}
             </div>
         </div>
     )
