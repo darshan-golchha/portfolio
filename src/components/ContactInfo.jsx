@@ -2,7 +2,6 @@ import React, { Suspense } from 'react'
 import 'tailwindcss/tailwind.css';
 import { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Bee } from '../models/bee';
 import Loader from './Loader';
 import emailjs from "@emailjs/browser";
 
