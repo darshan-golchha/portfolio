@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import Loader from './Loader';
 import emailjs from "@emailjs/browser";
+import Social from '../pages/social';
 
 const ContactInfo = () => {
 
@@ -47,7 +48,7 @@ const ContactInfo = () => {
         })
     }
     return (
-        <div className='max-w-[80%] min-w-[40%]'>
+        <div className='max-w-[80%] min-w-[80%]'>
             <div className="max-h-[50%] p-8 bg-white bg-opacity-30 backdrop-filter 
             backdrop-blur-lg border border-gray-200 rounded-lg shadow-lg transform transition duration-700 ease-in-out animate-fadeIn">
                 <div className='flex-1 flex flex-col min-w-[30%]'>
@@ -104,6 +105,9 @@ const ContactInfo = () => {
                             disabled={loading}
                         >{loading ? 'Sending...' : 'Send'}</button>
                     </form>
+                    <div className='flex flex-row justify-center items-center m-2'>
+                        <Social />
+                    </div>
                 </div>
             </div>
         </div>

@@ -3,12 +3,14 @@ import HomeInfo from './HomeInfo'
 import ContactInfo from './ContactInfo'
 import { Link } from 'react-router-dom'
 
-
-
-const Info = ({ text, link, btnTxt })=> (
+const Info = ({ text, link, btnTxt, isExternal }) => (
     <div className='info-box'>
         {text}
-        <Link to={link} className='btn'>{btnTxt}</Link>
+        {isExternal ? (
+            <a href={link} className='btn' target='_blank' rel='noopener noreferrer'>{btnTxt}</a>
+        ) : (
+            <Link to={link} className='btn'>{btnTxt}</Link>
+        )}
     </div>
 )
 
@@ -18,8 +20,8 @@ const renderContent = {
     ),
     4: (
         <Info
-        text={"Want to learn more about my professional journey and detailed accomplishments? Download my resume for an in-depth look at my skills, experiences, and achievements. Click below to access my resume."}
-        btnTxt={"Get My Resume"} link={"/resume"}
+        text={"Want to learn more about my professional journey and detailed accomplishments? Download my resume for an in-depth look at my skills, experiences, and achievements. Click below to access my resume. Last Updated: 21st June, 2024"}
+        btnTxt={"Get My Resume"} link={"/assets/Resume.pdf"} isExternal={true}
          />
     ),
     2: (

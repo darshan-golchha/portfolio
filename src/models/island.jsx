@@ -23,22 +23,22 @@ export function Model({ moving, setMoving, aircraftRef,skyRef, ...props }) {
   const dampingFactor = 0.95;
   const [rotationx, setRotationX] = useState(0);
   const [rotationy, setRotationY] = useState(0);
-  const { isRotating, setIsRotating, currentIndex, setCurrentStage, handleKeyDown } = useModelContext();
+  const { isRotating, setIsRotating, currentIndex, setCurrentStage, handleKeyDown, setCurrentIndex } = useModelContext();
 
   const areasOfInterest = [
-    { name: 'BUILDINGS', rotationYRange: [1, 1.40], rotationXRange: [0.5, 0.85] },
-    { name: 'SNOW', rotationYRange: [1.2, 1.9], rotationXRange: [5.2, 5.6] },
-    { name: 'PYRA', rotationYRange: [5.4, 5.65], rotationXRange: [5.9, 6.2] },
-    { name: 'FOREST', rotationYRange: [2.8, 3.1], rotationXRange: [0, 0.25] },
-    { name: 'ARCTIC', rotationYRange: [4.0, 5.4], rotationXRange: [0.4, 1.2] },
+    { name: 'BUILDINGS', rotationYRange: [1, 1.40], rotationXRange: [0.04, 0.1] },
+    { name: 'SNOW', rotationYRange: [1.2, 2], rotationXRange: [4.2, 4.7] },
+    { name: 'PYRA', rotationYRange: [5.4, 5.8], rotationXRange: [4.7,5.3] },
+    { name: 'FOREST', rotationYRange: [2.8, 3.1], rotationXRange: [5.2,5.4] },
+    { name: 'ARCTIC', rotationYRange: [1,1.7], rotationXRange: [1.2,1.7] },
   ];
 
   const coordinates = [
-    { y: 1.2, x: 0.6 },
-    { y: 1.5, x: 5.4 },
-    { y: 5.5, x: 6.0 },
-    { y: 2.9, x: 0.1 },
-    { y: 4.5, x: 0.8 },
+    { y: 1.25, x: 0.09 },
+    { y: 1.6, x: 4.43 },
+    { y: 5.7, x: 5.05 },
+    { y: 2.9, x: 5.25 },
+    { y: 1.59, x: 1.44 },
   ];
 
 
@@ -117,9 +117,13 @@ export function Model({ moving, setMoving, aircraftRef,skyRef, ...props }) {
         gsap.to(group.current.rotation, {
           x: targetX,
           y: targetY,
-          duration: 3, // Duration of the animation in seconds
-          onComplete: () => setIsRotating(false),
+          duration: 2, // Duration of the animation in seconds
+          onComplete: () => {
+            setIsRotating(false);
+            checkCurrentStage(group.current.rotation.x, group.current.rotation.y);
+          },
           onUpdate: () => {
+            setCurrentStage(null);
             // Update the aircraft orientation during the animation
             if (aircraftRef.current) {
               aircraftRef.current.setRotation({ x: 0.1, y: group.current.rotation.y, z: 0 });
@@ -128,8 +132,15 @@ export function Model({ moving, setMoving, aircraftRef,skyRef, ...props }) {
             if (skyRef.current) {
               skyRef.current.setRotation({ x: 0, y: group.current.rotation.y, z:0 });
             }
-            checkCurrentStage(group.current.rotation.x, group.current.rotation.y);
           }
+        });
+
+        // Animating the island position from group.current.position.set(1.1,-60,-130) to (0, 0, -300)
+        gsap.to(group.current.position, {
+          x: 0,
+          y: 0,
+          z: -300,
+          duration: 1,
         });
       }
     };
@@ -169,9 +180,21 @@ export function Model({ moving, setMoving, aircraftRef,skyRef, ...props }) {
     );
 
     if (area) {
+      gsap.to(group.current.position,{
+        x: 1.1,
+          y: -60,
+          z: -130,
+          duration: 1,
+      });
       setCurrentStage(areasOfInterest.indexOf(area) + 1);
     } else {
       setCurrentStage(null);
+      gsap.to(group.current.position,{
+        x: 0,
+          y: 0,
+          z: -300,
+          duration: 1,
+      });
     }
   };
 

@@ -1,13 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Social from '../pages/social';
 
 const CTA = () => {
+
   return (
     <section className='cta'>
-        <p className='cta-text'>Have a project in mind?<br className='sm:block hidden'/>Let's build something great together!</p>
-        <Link to='/about' className='btn'>Get in touch</Link>
+      <p className='cta-text'>
+        Have a project in mind?<br className='sm:block hidden' />
+        Let's build something great together!
+      </p>
+      <div className='flex flex-col gap-3 justify-center items-center'>
+        <Social />
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default CTA
+export default CTA;
