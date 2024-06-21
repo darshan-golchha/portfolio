@@ -34,7 +34,7 @@ body:has(.card[data-color="green"]:hover) {
     @apply font-semibold sm:text-3xl text-xl relative font-poppins;
   }
 
-  .reshigh{
+  .reshigh {
     @apply font-medium font-bold text-black-500;
   }
 
@@ -72,21 +72,25 @@ body:has(.card[data-color="green"]:hover) {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
 
-  .arw{
+  .arw {
     @apply w-[30%] h-[30%] transition duration-500 ease-in-out;
   }
 
-  .arw:hover{
+  .arw:hover {
     @apply scale-110 transition duration-500 ease-in-out;
   }
 
-  .arw:active{
+  .arw:active {
     @apply scale-90 transform transition duration-100 ease-in-out;
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
-  }
+    @apply flex justify-between items-center px-3 py-4 w-full absolute top-0 bg-transparent z-20;
+}
+.nav-items {
+    @apply flex text-lg gap-7 font-medium ml-auto;
+}
+
 
   .footer {
     @apply max-w-5xl mx-auto sm:px-16 pb-6 px-8 flex flex-col gap-7;
@@ -97,13 +101,10 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
-    @apply  max-w-[80%] flex flex-col items-center justify-center p-8
-     bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg border border-gray-200 
-     rounded-lg shadow-lg transform transition duration-700 ease-in-out animate-fadeIn
-     hover:scale-105;
+    @apply max-w-[80%] flex flex-col items-center justify-center p-8 bg-white bg-opacity-30 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg shadow-lg transform transition duration-700 ease-in-out animate-fadeIn hover:scale-105;
   }
 
-  .abt-box{
+  .abt-box {
     @apply flex flex-col items-center hover:scale-125 transform transition duration-500 ease-in-out animate-fadeIn;
   }
 
