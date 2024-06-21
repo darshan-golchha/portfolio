@@ -12,7 +12,7 @@ const Home = () => {
     const aircraftRef = useRef();
     const skyRef = useRef();
     const { isRotating, setIsRotating, currentStage, setCurrentStage, touchClick } = useModelContext();
-    
+
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
@@ -44,9 +44,11 @@ const Home = () => {
 
     return (
         <section className='w-full h-screen relative bg-black-500'>
-            <div className='absolute top-16 left-0 right-0 z-10 flex items-center justify-center gap-3'>
-                {currentStage && <div className='arw'><img src='/assets/icons/left.png' alt='left' onClick={() => touchClick("ArrowLeft")} /></div>}
+            <div className='absolute top-16 left-0 right-0 z-10 flex flex-col items-center justify-center gap-3'>
                 {currentStage && <Popup currentStage={currentStage} setCurrentStage={setCurrentStage} />}
+            </div>
+            <div className='absolute top-[85%] left-[32%] right-[30%]  z-10 flex items-center justify-center gap-3'>
+                {currentStage && <div className='arw'><img src='/assets/icons/left.png' alt='left' onClick={() => touchClick("ArrowLeft")} /></div>}
                 {currentStage && <div className='arw'><img src='/assets/icons/right.png' alt='right' onClick={() => touchClick("ArrowRight")} /></div>}
             </div>
             <Canvas

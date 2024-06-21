@@ -73,7 +73,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .arw{
-    @apply w-[4%] h-[4%] transition duration-500 ease-in-out;
+    @apply w-[30%] h-[30%] transition duration-500 ease-in-out;
   }
 
   .arw:hover{
