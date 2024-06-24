@@ -13,8 +13,81 @@ const Projects = () => {
       <div className="pl-8 pt-0 text-slate-500">
         <p>Explore some of my recent and notable projects that showcase my skills and passion for innovation.</p>
       </div>
+
+      <h1 className="subhead-text mt-16 mb-0 p-8 pb-0">
+        <span className="bg-blend-color-burn font-semibold drop-shadow">Advanced</span> Projects
+      </h1>
+      <div className="flex flex-col p-8 pt-0">
+        <div className='mt-0 flex'>
+          <VerticalTimeline layout="1-column-left">
+            <VerticalTimelineElement
+              date="June 2023 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+                position: 'relative', // Add this to position the SVG icon within the content
+              }}
+              icon={<img src="/assets/icons/database.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div style={{ position: 'relative' }}>
+                <h3 className='text-black text-xl font-semibold font-poppins'>KBase</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  A replica of Nucleopedia I created for NSEL, this is a knowledge-based management system that centralizes work-related knowledge and training, achieving a 70% reduction in onboarding time for over 1500 employees, demonstrating innovation and attention to detail.
+                </li>
+                <li>
+                  More Info for this can be found at the experiences page <Link to="/about" className="text-blue-500">here</Link>.
+                </li>
+              </ul>
+              <a href="https://kbase.darshangolchha.com" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '10px', right: '10px' }}>
+                <img src="/assets/icons/goto.png" alt="External Link" className="w-4 h-4 animate-ping" />
+              </a>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="December 2023 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none'
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #001f6f',
+              }}
+              icon={<img src="/assets/icons/chat.png" alt="Conversia" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Conversia</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>An innovative chat platform connecting strangers across the globe based on their interests with chatroom dissolving and creation concepts based on user activity and engagement, highlighting creativity and problem-solving skills.</li>
+                <li>Slashed message delivery latency by 40% with advanced web socket technology.</li>
+                <li>Optimized data efficiency by 60% using MongoDB Atlas for seamless CRUD operations.</li>
+                <li>Used RESTful API structure in Java Spring Framework and React to make the responsive backend and frontend.</li>
+              </ul>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
+      </div>
+      <h1 className="subhead-text mt-16 mb-0 p-8 pb-0">
+        <span className="bg-blend-color-burn font-semibold drop-shadow">Intermediate</span> Projects
+      </h1>
       <div className="py-10 flex flex-col p-8">
-        <div className='mt-12 flex'>
+        <div className='mt-0 flex'>
           <VerticalTimeline layout="1-column-left">
             <VerticalTimelineElement
               date="May 2024 - Present"
@@ -87,64 +160,15 @@ const Projects = () => {
                 </li>
               </ul>
             </VerticalTimelineElement>
-
-            <VerticalTimelineElement
-              date="June 2023 - Present"
-              iconStyle={{
-                background: 'white',
-                color: '#fff',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                boxShadow: 'none',
-              }}
-              contentStyle={{
-                boxShadow: 'none',
-                borderBottom: '12px solid #3498db',
-              }}
-              icon={<img src="/assets/icons/database.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
-            >
-              <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>KBase</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
-              </div>
-              <ul className='my-5 list-disc ml-5 space-y-2'>
-                <li className='text-black font-normal pl-1 text-small'>
-                  A replica of Nucleopedia I created for NSEL, this is a knowledge-based management system that centralizes work-related knowledge and training, achieving a 70% reduction in onboarding time for over 1500 employees, demonstrating innovation and attention to detail.
-                </li>
-                <li>
-                  More Info for this can be found at the experiences page <Link to="/about" className="text-blue-500">here</Link>.
-                </li>
-              </ul>
-            </VerticalTimelineElement>
-
-            <VerticalTimelineElement
-              date="December 2023 - Present"
-              iconStyle={{
-                background: 'white',
-                color: '#fff',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                boxShadow: 'none'
-              }}
-              contentStyle={{
-                boxShadow: 'none',
-                borderBottom: '12px solid #001f6f',
-              }}
-              icon={<img src="/assets/icons/chat.png" alt="Conversia" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
-            >
-              <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>Conversia</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
-              </div>
-              <ul className='my-5 list-disc ml-5 space-y-2'>
-                <li className='text-black font-normal pl-1 text-small'>An innovative chat platform connecting strangers across the globe based on their interests with chatroom dissolving and creation concepts based on user activity and engagement, highlighting creativity and problem-solving skills.</li>
-                <li>Slashed message delivery latency by 40% with advanced web socket technology.</li>
-                <li>Optimized data efficiency by 60% using MongoDB Atlas for seamless CRUD operations.</li>
-                <li>Used RESTful API structure in Java Spring Framework and React to make the responsive backend and frontend.</li>
-              </ul>
-            </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
+      </div>
+      <h1 className="subhead-text mt-16 mb-0 p-8 pb-0">
+        <span className="bg-blend-color-burn font-semibold drop-shadow">Easy</span> Projects
+      </h1>
+      <div className="py-10 flex flex-col p-8">
+        <div className='mt-0 flex'>
+          <VerticalTimeline layout="1-column-left">
             <VerticalTimelineElement
               date="March 2023"
               iconStyle={{
@@ -228,7 +252,7 @@ const Projects = () => {
       </div>
       <hr className='border-slate-200' />
       <CTA />
-    </section>
+    </section >
   );
 }
 
