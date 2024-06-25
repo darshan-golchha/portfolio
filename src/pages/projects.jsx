@@ -79,6 +79,9 @@ const Projects = () => {
                 <li>Optimized data efficiency by 60% using MongoDB Atlas for seamless CRUD operations.</li>
                 <li>Used RESTful API structure in Java Spring Framework and React to make the responsive backend and frontend.</li>
               </ul>
+              <a href="https://conversia.darshangolchha.com" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '10px', right: '10px' }}>
+                <img src="/assets/icons/goto.png" alt="External Link" className="w-4 h-4 animate-ping" />
+              </a>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
