@@ -20,18 +20,18 @@ const renderContent = {
     ),
     4: (
         <Info
-        text={"Want to learn more about my professional journey and detailed accomplishments? Download my resume for an in-depth look at my skills, experiences, and achievements. Click below to access my resume. Last Updated: 21st June, 2024"}
-        btnTxt={"Get My Resume"} link={"/assets/Resume.pdf"} isExternal={true}
+        text={"Download my resume for an in-depth look at my skills, experiences, and achievements. Last Updated: 21st June, 2024"}
+        btnTxt={"Get My Resume"} link={"/assets/docs/Resume.pdf"} isExternal={true}
          />
     ),
     2: (
         <Info 
-        text={"Learn more about my journey, skills, and experiences that have shaped my career in computer science and data science. Click below to explore my story and see how I can help solve your problems with innovative solutions."} 
+        text={"Learn more about my journey, skills, and experiences that have shaped my career in computer science and data science."} 
         btnTxt={"About Me"} link={"/about"}/>
     ),
     3: (
         <Info 
-        text={"Check out the innovative projects I have worked on, showcasing my skills in software development, data science, and problem-solving. Click below to dive into my portfolio and see the solutions I've built."}
+        text={"Check out the innovative projects I have worked on, showcasing my skills in software development, data science, and problem-solving."}
         btnTxt={"Projects"} link={"/projects"}
         
         />
