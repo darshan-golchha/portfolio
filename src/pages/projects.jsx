@@ -39,7 +39,7 @@ const Projects = () => {
             >
               <div style={{ position: 'relative' }}>
                 <h3 className='text-black text-xl font-semibold font-poppins'>KBase</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Nucleus Software Exports Limited</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>
@@ -49,9 +49,57 @@ const Projects = () => {
                   More Info for this can be found at the experiences page <Link to="/about" className="text-blue-500">here</Link>.
                 </li>
               </ul>
-              <a href="https://kbase.darshangolchha.com" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '10px', right: '10px' }}>
-                <img src="/assets/icons/goto.png" alt="External Link" className="w-4 h-4 animate-ping" />
-              </a>
+              <div className='top-3 right-3 absolute flex gap-6 rounded-lg p-1'>
+                <a href="https://kbase.darshangolchha.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/goto.png" alt="External Link" className="w-6 h-6" />
+                </a>
+                <a href="https://github.com/darshan-golchha/kbase-frontend" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/code.png" alt="External Link" className="w-6 h-6" />
+                </a>
+              </div>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="June 2024 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+              }}
+              icon={<img src="/assets/icons/super.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>AI Commit Risk Analyser</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Developed Integrated Code Quality Platform</span>: Combined SonarQube and SonarCloud for comprehensive code analysis across 29 programming languages, ensuring consistent quality checks.
+                </li>
+                <li>
+                  <span className='reshigh'>Automated and Enhanced Code Review</span>: Designed and deployed a Bug Frequency Server, utilizing historical data to predict the impact of code changes, leading to a 40% reduction in critical production bugs and integrated Large Language Model (LLM) for automated code reviews, reducing critical production bugs by 40% and improving review efficiency by 50%.
+                </li>
+                <li>
+                  <span className='reshigh'>Optimized Severity Calculation and CI/CD Pipeline</span>: Created a multi-faceted severity calculator and streamlined SonarCloud setup with Git repositories, leading to a 30% improvement in issue prioritization accuracy and a 60% reduction in manual review time.
+                </li>
+                <li>
+                  <span className='reshigh'>Innovative Severity Indexing and Documentation</span>: Developed a weighted mean system for Master Severity Index, increasing code quality gate pass rates by 25%, and delivered clear documentation for seamless Java Relay Server integration.
+                </li>
+              </ul>
+              <div className='top-3 right-3 absolute flex gap-6 rounded-lg p-1'>
+                <a href="https://ccom.darshangolchha.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/goto.png" alt="External Link" className="w-6 h-6" />
+                </a>
+                <a href="https://github.com/darshan-golchha/ai-commit-risk-analyser/tree/main" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/code.png" alt="External Link" className="w-6 h-6" />
+                </a>
+              </div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="December 2023 - Present"
@@ -79,9 +127,14 @@ const Projects = () => {
                 <li>Optimized data efficiency by 60% using MongoDB Atlas for seamless CRUD operations.</li>
                 <li>Used RESTful API structure in Java Spring Framework and React to make the responsive backend and frontend.</li>
               </ul>
-              <a href="https://conversia.darshangolchha.com" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '10px', right: '10px' }}>
-                <img src="/assets/icons/goto.png" alt="External Link" className="w-4 h-4 animate-ping" />
-              </a>
+              <div className='top-3 right-3 absolute flex gap-6 rounded-lg p-1'>
+                <a href="https://conversia.darshangolchha.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/goto.png" alt="External Link" className="w-6 h-6" />
+                </a>
+                <a href="https://github.com/darshan-golchha/vtalk-frontend" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/icons/code.png" alt="External Link" className="w-6 h-6" />
+                </a>
+              </div>
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
@@ -110,7 +163,7 @@ const Projects = () => {
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Anomaly Detection System</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>AI Project</p>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>
@@ -124,9 +177,8 @@ const Projects = () => {
                 </li>
               </ul>
             </VerticalTimelineElement>
-
             <VerticalTimelineElement
-              date="June 2024 - Present"
+              date="July 2024"
               iconStyle={{
                 background: 'white',
                 color: '#fff',
@@ -139,27 +191,24 @@ const Projects = () => {
                 boxShadow: 'none',
                 borderBottom: '12px solid #3498db',
               }}
-              icon={<img src="/assets/icons/super.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+              icon={<img src="/assets/icons/detect.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
             >
               <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>AI Severity Detector</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project</p>
+                <h3 className='text-black text-xl font-semibold font-poppins'>VCS Pull Requests Fetcher and Analyzer</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>
-                  Developed a sophisticated system to extract JIRA issues based on project and issue type, utilizing JIRA and Bitbucket APIs to gather and analyze commit data.
+                  <span className='reshigh'>Integrated Multi-VCS Support</span>: Developed a system to fetch and analyze pull requests from GitLab, GitHub, and Bitbucket, ensuring compatibility with major version control systems and simplifying multi-repository management.
                 </li>
                 <li>
-                  Extracted file names and line changes from commit diffs, assigning priorities based on JIRA bug severity to efficiently categorize and manage issues.
+                  <span className='reshigh'>Automated Pull Request Fetching and Storage</span>: Implemented automated fetching and storage of pull requests, reducing manual effort by 70% and ensuring consistent data capture across repositories.
                 </li>
                 <li>
-                  Created a severity index calculator to assign weights to code lines based on their bug priority, ensuring a precise analysis of code severity.
+                  <span className='reshigh'>Enhanced Authentication Flexibility</span>: Provided options for both manual and default authentication, increasing user convenience and securing access to repositories, which led to a 50% improvement in user satisfaction.
                 </li>
                 <li>
-                  Trained a Sequential Neural Network Model to learn patterns from tokenized lines and their severity indices, implementing a robust supervised machine learning approach.
-                </li>
-                <li>
-                  Successfully exported the trained model to detect and evaluate the severity of lines in real-time, showcasing innovation in automated code analysis and prioritization.
+                  <span className='reshigh'>Comprehensive Pull Request Analysis</span>: Designed methods to store detailed pull request data and diffs in CSV files, facilitating advanced analysis and reporting, and resulting in a 60% increase in actionable insights for development teams.
                 </li>
               </ul>
             </VerticalTimelineElement>
