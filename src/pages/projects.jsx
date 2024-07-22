@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/cta';
 import { Link } from 'react-router-dom';
+import DropdownMenu from '../components/projectdetails';
 
 const Projects = () => {
   return (
@@ -48,14 +49,61 @@ const Projects = () => {
                 <li>
                   More Info for this can be found at the experiences page <Link to="/about" className="text-blue-500">here</Link>.
                 </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  Use credentials (username: golchha, password: pass) to<span className='reshigh'> login as ADMIN.</span>
+                </li>
               </ul>
-              <div className='top-3 right-3 absolute flex gap-6 rounded-lg p-1'>
-                <a href="https://kbase.darshangolchha.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/goto.png" alt="External Link" className="w-6 h-6" />
-                </a>
-                <a href="https://github.com/darshan-golchha/kbase-frontend" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/code.png" alt="External Link" className="w-6 h-6" />
-                </a>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/kbase-frontend', text: 'Frontend' },
+                  { href: 'https://kbase.darshangolchha.com', text: 'Webpage' }
+                ]} />
+              </div>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="July 2024 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+                position: 'relative', // Add this to position the SVG icon within the content
+              }}
+              icon={<img src="/assets/icons/infragen.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div style={{ position: 'relative' }}>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Infragen</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Designed and implemented a sophisticated React-based dynamic form</span> to efficiently gather comprehensive infrastructure requirements from users. The form features intuitive questions tailored to determine the optimal technologies for building and deploying applications, enhancing user experience and accuracy in capturing project needs.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Integrated a robust backend API</span> using Python and Django for seamless form submission and real-time updates. Leveraged Google Gemini LLM with advanced prompt engineering to deliver actionable content, improving the precision of infrastructure recommendations.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Enabled interactive modifications</span> to the generated infrastructure design through a chat interface. Users can easily adjust the content without repetitive information entry, leading to a 40% reduction in manual input and increasing user satisfaction by 30%.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Implemented real-time context saving</span> to ensure smooth transitions and modifications without losing previous inputs, thus enhancing the application's responsiveness and user engagement.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Introduced High-Level Design (HLD) generation</span> feature, providing users with a visual overview of their service architecture. This feature has resulted in a 25% improvement in project planning accuracy and has been well-received for its clarity in presenting infrastructure layouts.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/ai-infragen-backend', text: 'Backend' },
+                  { href: 'https://github.com/darshan-golchha/ai-infragen', text: 'Frontend' },
+                  { href: 'https://infragen.darshangolchha.com', text: 'Webpage' }
+                ]} />
               </div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -92,13 +140,11 @@ const Projects = () => {
                   <span className='reshigh'>Innovative Severity Indexing and Documentation</span>: Developed a weighted mean system for Master Severity Index, increasing code quality gate pass rates by 25%, and delivered clear documentation for seamless Java Relay Server integration.
                 </li>
               </ul>
-              <div className='top-3 right-3 absolute flex gap-6 rounded-lg p-1'>
-                <a href="https://ccom.darshangolchha.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/goto.png" alt="External Link" className="w-6 h-6" />
-                </a>
-                <a href="https://github.com/darshan-golchha/ai-commit-risk-analyser/tree/main" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/code.png" alt="External Link" className="w-6 h-6" />
-                </a>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/ai-commit-risk-analyser/tree/main', text: 'Code' },
+                  { href: 'https://ccom.darshangolchha.com', text: 'Webpage' }
+                ]} />
               </div>
             </VerticalTimelineElement>
             <VerticalTimelineElement
@@ -127,13 +173,11 @@ const Projects = () => {
                 <li>Optimized data efficiency by 60% using MongoDB Atlas for seamless CRUD operations.</li>
                 <li>Used RESTful API structure in Java Spring Framework and React to make the responsive backend and frontend.</li>
               </ul>
-              <div className='top-3 right-3 absolute flex gap-6 rounded-lg p-1'>
-                <a href="https://conversia.darshangolchha.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/goto.png" alt="External Link" className="w-6 h-6" />
-                </a>
-                <a href="https://github.com/darshan-golchha/vtalk-frontend" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/icons/code.png" alt="External Link" className="w-6 h-6" />
-                </a>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/vtalk-frontend', text: 'Frontend' },
+                  { href: 'https://conversia.darshangolchha.com', text: 'Webpage' }
+                ]} />
               </div>
             </VerticalTimelineElement>
           </VerticalTimeline>
