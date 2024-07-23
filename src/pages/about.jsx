@@ -2,6 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/cta';
+import SkillTags from '../components/projectskills';
 
 const About = () => {
   return (
@@ -112,17 +113,33 @@ const About = () => {
             >
 
               <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>Artificial Intelligence Intern</h3>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Software Engineering and Machine Learning Intern</h3>
                 <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Opstree Solutions</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>
-                  Building an AI based API retrieving debugger that provides debugging solutions to pipeline fails.
+                  <span className='reshigh'>Pioneered a Dynamic React-Based Form</span>: Designed and implemented a sophisticated React-based form to efficiently gather detailed infrastructure requirements, enhancing user experience and project accuracy.
                 </li>
-                <li>Detecting trends in normal data to find out anomalies in test data.</li>
-                <li>Used sklearn Isolation Forest to make decision trees that assigned scores to data points for detect anomalous data points.</li>
-                <li>Used this Detection system to detect unusual spikes in CPU usage and other important metrics.</li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Integrated Advanced Backend API</span>: Developed a robust backend using Python and Django, incorporating Google Gemini LLM for precise and actionable infrastructure recommendations, significantly improving real-time updates and form submissions.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Enabled Interactive Infrastructure Adjustments</span>: Introduced a chat-based interface allowing users to modify generated infrastructure designs interactively, reducing manual input by 40% and increasing user satisfaction by 30%.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Optimized Code Quality and Review Processes</span>: Combined SonarQube and SonarCloud to create a comprehensive code quality platform, and deployed a Bug Frequency Server and LLM integration to cut critical production bugs by 40% and enhance review efficiency by 50%.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Enhanced CI/CD Pipeline and Severity Indexing</span>: Developed a multi-faceted severity calculator and streamlined SonarCloud setup, resulting in a 30% improvement in issue prioritization and a 60% reduction in manual review time.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Integrated Multi-VCS Support</span>: Built a system to fetch and analyze pull requests from GitLab, GitHub, and Bitbucket, simplifying multi-repository management and ensuring compatibility across major version control systems.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Implemented Robust Anomaly Detection</span>: Designed an anomaly detection system using sklearn Isolation Forest to monitor critical metrics, improving proactive system management and identifying unusual patterns effectively.
+                </li>
               </ul>
+              <SkillTags skills={['SonarQube', 'SonarCloud', 'Python', 'JavaScript', 'Docker', 'Django', 'Java', 'SpringBoot', 'RestAPI', 'LLM', 'sklearn', 'MySQL', 'HTML', 'CSS', 'BitBucket']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="June 2023 - August 2023"
@@ -164,6 +181,7 @@ const About = () => {
                   reduction in reload time for the <span className='reshigh'>web application</span>.
                 </li>
               </ul>
+              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'React', 'AWS', 'S3']} />
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>

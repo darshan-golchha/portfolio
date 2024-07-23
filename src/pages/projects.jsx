@@ -4,6 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/cta';
 import { Link } from 'react-router-dom';
 import DropdownMenu from '../components/projectdetails';
+import SkillTags from '../components/projectskills';
 
 const Projects = () => {
   return (
@@ -21,6 +22,48 @@ const Projects = () => {
       <div className="flex flex-col p-8 pt-0">
         <div className='mt-0 flex'>
           <VerticalTimeline layout="1-column-left">
+            <VerticalTimelineElement
+              date="June 2024 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+              }}
+              icon={<img src="/assets/icons/super.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>AI Commit Risk Analyser</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Developed Integrated Code Quality Platform</span>: Combined SonarQube and SonarCloud for comprehensive code analysis across 29 programming languages, ensuring consistent quality checks.
+                </li>
+                <li>
+                  <span className='reshigh'>Automated and Enhanced Code Review</span>: Designed and deployed a Bug Frequency Server, utilizing historical data to predict the impact of code changes, leading to a 40% reduction in critical production bugs and integrated Large Language Model (LLM) for automated code reviews, reducing critical production bugs by 40% and improving review efficiency by 50%.
+                </li>
+                <li>
+                  <span className='reshigh'>Optimized Severity Calculation and CI/CD Pipeline</span>: Created a multi-faceted severity calculator and streamlined SonarCloud setup with Git repositories, leading to a 30% improvement in issue prioritization accuracy and a 60% reduction in manual review time.
+                </li>
+                <li>
+                  <span className='reshigh'>Innovative Severity Indexing and Documentation</span>: Developed a weighted mean system for Master Severity Index, increasing code quality gate pass rates by 25%, and delivered clear documentation for seamless Java Relay Server integration.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/ai-commit-risk-analyser/tree/main', text: 'Code' },
+                  { href: 'https://ccom.darshangolchha.com', text: 'Webpage' }
+                ]} />
+              </div>
+              <SkillTags skills={['SonarQube', 'SonarCloud', 'Python', 'JavaScript', 'Docker', 'Django', 'Java', 'SpringBoot', 'RestAPI', 'LLM', 'sklearn', 'MySQL', 'HTML', 'CSS']} />
+            </VerticalTimelineElement>
             <VerticalTimelineElement
               date="June 2023 - Present"
               iconStyle={{
@@ -59,6 +102,7 @@ const Projects = () => {
                   { href: 'https://kbase.darshangolchha.com', text: 'Webpage' }
                 ]} />
               </div>
+              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'React', 'AWS', 'S3']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="July 2024 - Present"
@@ -105,47 +149,7 @@ const Projects = () => {
                   { href: 'https://infragen.darshangolchha.com', text: 'Webpage' }
                 ]} />
               </div>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              date="June 2024 - Present"
-              iconStyle={{
-                background: 'white',
-                color: '#fff',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                boxShadow: 'none',
-              }}
-              contentStyle={{
-                boxShadow: 'none',
-                borderBottom: '12px solid #3498db',
-              }}
-              icon={<img src="/assets/icons/super.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
-            >
-              <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>AI Commit Risk Analyser</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
-              </div>
-              <ul className='my-5 list-disc ml-5 space-y-2'>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Developed Integrated Code Quality Platform</span>: Combined SonarQube and SonarCloud for comprehensive code analysis across 29 programming languages, ensuring consistent quality checks.
-                </li>
-                <li>
-                  <span className='reshigh'>Automated and Enhanced Code Review</span>: Designed and deployed a Bug Frequency Server, utilizing historical data to predict the impact of code changes, leading to a 40% reduction in critical production bugs and integrated Large Language Model (LLM) for automated code reviews, reducing critical production bugs by 40% and improving review efficiency by 50%.
-                </li>
-                <li>
-                  <span className='reshigh'>Optimized Severity Calculation and CI/CD Pipeline</span>: Created a multi-faceted severity calculator and streamlined SonarCloud setup with Git repositories, leading to a 30% improvement in issue prioritization accuracy and a 60% reduction in manual review time.
-                </li>
-                <li>
-                  <span className='reshigh'>Innovative Severity Indexing and Documentation</span>: Developed a weighted mean system for Master Severity Index, increasing code quality gate pass rates by 25%, and delivered clear documentation for seamless Java Relay Server integration.
-                </li>
-              </ul>
-              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
-                <DropdownMenu links={[
-                  { href: 'https://github.com/darshan-golchha/ai-commit-risk-analyser/tree/main', text: 'Code' },
-                  { href: 'https://ccom.darshangolchha.com', text: 'Webpage' }
-                ]} />
-              </div>
+              <SkillTags skills={['React', 'Python', 'Django', 'LLM', 'HTML', 'CSS', 'JavaScript', 'Caching']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="December 2023 - Present"
@@ -179,6 +183,7 @@ const Projects = () => {
                   { href: 'https://conversia.darshangolchha.com', text: 'Webpage' }
                 ]} />
               </div>
+              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'React', 'WebSocket']} />
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
@@ -189,6 +194,129 @@ const Projects = () => {
       <div className="py-10 flex flex-col p-8">
         <div className='mt-0 flex'>
           <VerticalTimeline layout="1-column-left">
+            <VerticalTimelineElement
+              date="July 2024"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+              }}
+              icon={<img src="/assets/icons/pull.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>VCS Pull Requests Fetcher and Analyzer</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Integrated Multi-VCS Support</span>: Developed a system to fetch and analyze pull requests from GitLab, GitHub, and Bitbucket, ensuring compatibility with major version control systems and simplifying multi-repository management.
+                </li>
+                <li>
+                  <span className='reshigh'>Automated Pull Request Fetching and Storage</span>: Implemented automated fetching and storage of pull requests, reducing manual effort by 70% and ensuring consistent data capture across repositories.
+                </li>
+                <li>
+                  <span className='reshigh'>Enhanced Authentication Flexibility</span>: Provided options for both manual and default authentication, increasing user convenience and securing access to repositories, which led to a 50% improvement in user satisfaction.
+                </li>
+                <li>
+                  <span className='reshigh'>Comprehensive Pull Request Analysis</span>: Designed methods to store detailed pull request data and diffs in CSV files, facilitating advanced analysis and reporting, and resulting in a 60% increase in actionable insights for development teams.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/pull-requests-dataextractor', text: 'Code' },
+                ]} />
+              </div>
+              <SkillTags skills={['Python', 'Django', 'Git', 'GitHub', 'GitLab', 'BitBucket', 'Machine Learning', 'Data Cleaning', 'Data Processing', 'Visualisation']} />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="July 2024"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+              }}
+              icon={<img src="/assets/icons/detect.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Songs Searcher</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project for University of Wisconsin-Madison</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Developed a Song Searcher Application</span>: Engineered a robust application to search songs across various genres, artists, and languages, utilizing complex Regex to parse and load data from CSV files.
+                </li>
+                <li>
+                  <span className='reshigh'>Implemented Red-Black Tree Data Structure</span>: Enhanced search efficiency by organizing song data into a Red-Black Tree, significantly improving retrieval times for song queries.
+                </li>
+                <li>
+                  <span className='reshigh'>Designed Command Line Interface (CLI)</span>: Created an intuitive CLI for seamless interaction with the application, enabling users to load datasets, perform song searches, and obtain insightful data analyses.
+                </li>
+                <li>
+                  <span className='reshigh'>Provided Comprehensive Data Insights</span>: Implemented additional functions to analyze song data, delivering valuable insights and statistics, thereby enriching the user experience and data understanding.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/song-searcher', text: 'Code' },
+                ]} />
+              </div>
+              <SkillTags skills={['Java', 'Algorithms', 'Data Structures', 'Regex']} />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="July 2024"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+              }}
+              icon={<img src="/assets/icons/llm.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Graph-based Social Network Analyzer</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project for University of Wisconsin-Madison</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Engineered a Graph-based Social Network</span>: Developed a dynamic social network using graphs and nodes, enabling efficient exploration and analysis of user connections.
+                </li>
+                <li>
+                  <span className='reshigh'>Optimized Connection Search with Dijkstra's Algorithm</span>: Implemented Dijkstra's algorithm to determine the closest connections between users, enhancing the accuracy and speed of connection searches.
+                </li>
+                <li>
+                  <span className='reshigh'>Developed User Statistics Tracking</span>: Designed functionalities to track and report user statistics, including the number of friendships, average friends per user, and other relevant metrics, providing valuable insights into the network's structure.
+                </li>
+                <li>
+                  <span className='reshigh'>Created a CLI-based Frontend</span>: Built a command line interface for user interaction, facilitating seamless searches through connections and easy access to user statistics, thereby improving user engagement and data accessibility.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/social-network', text: 'Code' },
+                ]} />
+              </div>
+              <SkillTags skills={['Java', 'Algorithms', 'Data Structures', 'Graph Theory', 'Dijkstra Algorithm']} />
+            </VerticalTimelineElement>
             <VerticalTimelineElement
               date="May 2024 - Present"
               iconStyle={{
@@ -220,41 +348,7 @@ const Projects = () => {
                   Implemented the detection system to monitor and identify unusual spikes in CPU usage and other critical metrics, ensuring proactive system management.
                 </li>
               </ul>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-              date="July 2024"
-              iconStyle={{
-                background: 'white',
-                color: '#fff',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                boxShadow: 'none',
-              }}
-              contentStyle={{
-                boxShadow: 'none',
-                borderBottom: '12px solid #3498db',
-              }}
-              icon={<img src="/assets/icons/detect.png" alt="AI Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
-            >
-              <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>VCS Pull Requests Fetcher and Analyzer</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
-              </div>
-              <ul className='my-5 list-disc ml-5 space-y-2'>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Integrated Multi-VCS Support</span>: Developed a system to fetch and analyze pull requests from GitLab, GitHub, and Bitbucket, ensuring compatibility with major version control systems and simplifying multi-repository management.
-                </li>
-                <li>
-                  <span className='reshigh'>Automated Pull Request Fetching and Storage</span>: Implemented automated fetching and storage of pull requests, reducing manual effort by 70% and ensuring consistent data capture across repositories.
-                </li>
-                <li>
-                  <span className='reshigh'>Enhanced Authentication Flexibility</span>: Provided options for both manual and default authentication, increasing user convenience and securing access to repositories, which led to a 50% improvement in user satisfaction.
-                </li>
-                <li>
-                  <span className='reshigh'>Comprehensive Pull Request Analysis</span>: Designed methods to store detailed pull request data and diffs in CSV files, facilitating advanced analysis and reporting, and resulting in a 60% increase in actionable insights for development teams.
-                </li>
-              </ul>
+              <SkillTags skills={['Python', 'sklearn', 'MatplotLib', 'Machine Learning']} />
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
@@ -283,7 +377,7 @@ const Projects = () => {
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Changemaker</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project</p>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project for University of Wisconsin-Madison</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>Developed an efficient recursive change-making algorithm in Java.</li>
@@ -291,6 +385,7 @@ const Projects = () => {
                 <li>Enhanced algorithm runtime by 15% through the implementation of BST operations.</li>
                 <li>Ensured algorithm correctness through comprehensive unit testing, showcasing attention to detail and quality assurance skills with a reduction in bugs by 100%.</li>
               </ul>
+              <SkillTags skills={['Java', 'Algorithms', 'Data Structures']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="April 2023"
@@ -310,13 +405,14 @@ const Projects = () => {
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>Twitter Feed</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project</p>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project for University of Wisconsin-Madison</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>Engineered a highly efficient Twiterator in a singly-linked list data structure in Java, reducing memory usage by 25%.</li>
                 <li>Implemented user-friendly commands, enhancing user customization by 20% through effective teamwork.</li>
                 <li>Introduced a "High Likes Ratio" filter, showcasing user empathy and creativity in enhancing user experience with a 30% higher ratio of likes to total interactions.</li>
               </ul>
+              <SkillTags skills={['Java', 'Data Structures', 'Algorithms']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="November 2022"
@@ -336,12 +432,13 @@ const Projects = () => {
             >
               <div>
                 <h3 className='text-black text-xl font-semibold font-poppins'>University Rankings Analyzer</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project</p>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Academic Project for University of Wisconsin-Madison</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
                 <li className='text-black font-normal pl-1 text-small'>Executed complex MySQL queries to efficiently retrieve and analyze data, demonstrating analytical skills and attention to detail in maintaining a 95% accuracy rate in Data Extraction.</li>
                 <li>Employed pandas DataFrames in Python to streamline data processing time with a 20% improvement.</li>
               </ul>
+              <SkillTags skills={['Python', 'MySQL', 'Data Analysis']} />
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
