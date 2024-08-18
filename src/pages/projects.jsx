@@ -183,7 +183,7 @@ const Projects = () => {
                   { href: 'https://conversia.darshangolchha.com', text: 'Webpage' }
                 ]} />
               </div>
-              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'React', 'WebSocket']} />
+              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'React', 'WebSocket','S3','AWS']} />
             </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
