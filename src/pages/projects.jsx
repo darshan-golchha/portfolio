@@ -183,8 +183,62 @@ const Projects = () => {
                   { href: 'https://conversia.darshangolchha.com', text: 'Webpage' }
                 ]} />
               </div>
-              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'React', 'WebSocket','S3','AWS']} />
+              <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'React', 'WebSocket', 'S3', 'AWS']} />
             </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="January 2025 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #001f6f',
+              }}
+              icon={
+                <img
+                  src="/assets/icons/super.png"
+                  alt="Super Tic Tac Toe Icon"
+                  className="w-8 h-8"
+                  style={{ borderRadius: '50%', width: '100%', height: '100%' }}
+                />
+              }
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Super Tic Tac Toe AI</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>AI-Powered Gameplay</span>: Implemented game theory concepts, including minimax algorithm and alpha-beta pruning, enabling the AI to make optimal moves efficiently.
+                </li>
+                <li>
+                  <span className='reshigh'>Scalable Backend Development</span>: Built a robust backend using Flask Python to handle game logic, state management, and AI computations.
+                </li>
+                <li>
+                  <span className='reshigh'>Dynamic User Interface</span>: Developed an interactive frontend in React, providing players with a seamless experience for multi-grid tic-tac-toe gameplay.
+                </li>
+                <li>
+                  <span className='reshigh'>Real-Time Gameplay Analysis</span>: Integrated move evaluation metrics and visual feedback to enhance player engagement and learning.
+                </li>
+                <li>
+                  <span className='reshigh'>Algorithm Optimization</span>: Fine-tuned AI performance, achieving faster decision-making while maintaining accuracy in strategic predictions.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/ultimate-tictactoe-frontend', text: 'Frontend' },
+                  { href: 'https://github.com/darshan-golchha/ultimate-tic-tac-toe/tree/main', text: 'Backend' },
+                  { href: 'https://super-tic-tac-toe.darshangolchha.com', text: 'Webpage' }
+                ]} />
+              </div>
+              <SkillTags skills={['React', 'Flask', 'Python', 'JavaScript', 'Game Theory', 'Minimax', 'Alpha-Beta Pruning']} />
+            </VerticalTimelineElement>
+
           </VerticalTimeline>
         </div>
       </div>
@@ -359,6 +413,42 @@ const Projects = () => {
       <div className="py-10 flex flex-col p-8">
         <div className='mt-0 flex'>
           <VerticalTimeline layout="1-column-left">
+            <VerticalTimelineElement
+              date="December 2024"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+              }}
+              icon={<img src="/assets/icons/detect.png" alt="Spy Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Spy Fall Game</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Developed a web-based version of the popular Spy Fall game</span> using React and Javascript, allowing users to play the game online with friends.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>The game involves players guessing the spy among them</span> based on limited information, promoting critical thinking and social interaction.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/spyfall', text: 'Code' },
+                  { href: 'http://spy.darshangolchha.com', text: 'Webpage' }
+                ]} />
+              </div>
+              <SkillTags skills={['HTML', 'CSS', 'JavaScript', 'React']} />
+            </VerticalTimelineElement>
             <VerticalTimelineElement
               date="March 2023"
               iconStyle={{
