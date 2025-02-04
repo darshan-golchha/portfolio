@@ -155,15 +155,20 @@ const Portfolio = ({ togglePlay, setTogglePlay }) => {
 
     const projects = [
         {
-            title: "Spyfall",
-            description: "The game involves players guessing the spy among them based on limited information, promoting critical thinking and social interaction.",
-            tech: "React, JavaScript, HTML, CSS",
+            title: "Forefarm",
+            description: "A web app that helps farmers predict extreme weather impacts using machine learning and interactive farmland mapping.",
+            tech: "Python, Flask, MongoDB, React, Mapbox, Auth0, Machine Learning, Random Forest"
         },
         {
             title: "Super Tic Tac Toe",
             description: "A more complex version of the classic Tic Tac Toe game, requiring strategic thinking and planning.",
             // 'React', 'Flask', 'Python', 'JavaScript', 'Game Theory', 'Minimax', 'Alpha-Beta Pruning', 'Frontend Development', 'Backend Development'
             tech: "React, Flask, Python, JavaScript, Game Theory, Minimax, Alpha-Beta Pruning",
+        },
+        {
+            title: "Spyfall",
+            description: "The game involves players guessing the spy among them based on limited information, promoting critical thinking and social interaction.",
+            tech: "React, JavaScript, HTML, CSS",
         }
     ];
 
