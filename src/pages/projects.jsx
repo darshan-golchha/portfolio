@@ -5,6 +5,7 @@ import CTA from '../components/cta';
 import { Link } from 'react-router-dom';
 import DropdownMenu from '../components/projectdetails';
 import SkillTags from '../components/projectskills';
+import { Sprout } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -105,53 +106,6 @@ const Projects = () => {
               <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'React', 'AWS', 'S3']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              date="July 2024 - Present"
-              iconStyle={{
-                background: 'white',
-                color: '#fff',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                boxShadow: 'none',
-              }}
-              contentStyle={{
-                boxShadow: 'none',
-                borderBottom: '12px solid #3498db',
-                position: 'relative', // Add this to position the SVG icon within the content
-              }}
-              icon={<img src="/assets/icons/infragen.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
-            >
-              <div style={{ position: 'relative' }}>
-                <h3 className='text-black text-xl font-semibold font-poppins'>Infragen</h3>
-                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
-              </div>
-              <ul className='my-5 list-disc ml-5 space-y-2'>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Designed and implemented a sophisticated React-based dynamic form</span> to efficiently gather comprehensive infrastructure requirements from users. The form features intuitive questions tailored to determine the optimal technologies for building and deploying applications, enhancing user experience and accuracy in capturing project needs.
-                </li>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Integrated a robust backend API</span> using Python and Django for seamless form submission and real-time updates. Leveraged Google Gemini LLM with advanced prompt engineering to deliver actionable content, improving the precision of infrastructure recommendations.
-                </li>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Enabled interactive modifications</span> to the generated infrastructure design through a chat interface. Users can easily adjust the content without repetitive information entry, leading to a 40% reduction in manual input and increasing user satisfaction by 30%.
-                </li>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Implemented real-time context saving</span> to ensure smooth transitions and modifications without losing previous inputs, thus enhancing the application's responsiveness and user engagement.
-                </li>
-                <li className='text-black font-normal pl-1 text-small'>
-                  <span className='reshigh'>Introduced High-Level Design (HLD) generation</span> feature, providing users with a visual overview of their service architecture. This feature has resulted in a 25% improvement in project planning accuracy and has been well-received for its clarity in presenting infrastructure layouts.
-                </li>
-              </ul>
-              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
-                <DropdownMenu links={[
-                  { href: 'https://github.com/darshan-golchha/ai-infragen-backend', text: 'Backend' },
-                  { href: 'https://github.com/darshan-golchha/ai-infragen', text: 'Frontend' },
-                  { href: 'https://infragen.darshangolchha.com', text: 'Webpage' }
-                ]} />
-              </div>
-              <SkillTags skills={['React', 'Python', 'Django', 'LLM', 'HTML', 'CSS', 'JavaScript', 'Caching']} />
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
               date="December 2023 - Present"
               iconStyle={{
                 background: 'white',
@@ -238,7 +192,103 @@ const Projects = () => {
               </div>
               <SkillTags skills={['React', 'Flask', 'Python', 'JavaScript', 'Game Theory', 'Minimax', 'Alpha-Beta Pruning']} />
             </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="March 2024"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #228B22',
+              }}
+              icon={
+                <img
+                  src="/assets/icons/forefarm.png"
+                  alt="ForeFarm Icon"
+                  className="w-8 h-8"
+                  style={{ borderRadius: '50%', width: '100%', height: '100%' }}
+                />
+              }
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>ForeFarm</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>MadHacks Hackathon Project</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Backend Development</span>: Built a Flask backend to handle API requests, securely connect to MongoDB, and execute machine learning predictions.
+                </li>
+                <li>
+                  <span className='reshigh'>Machine Learning Integration</span>: Designed a pipeline for extreme weather prediction using Random Forest models trained on county-level data from 2019-2024.
+                </li>
+                <li>
+                  <span className='reshigh'>Interactive Frontend</span>: Contributed to the React web app, implementing Mapbox for farmers to map their farmland interactively.
+                </li>
+                <li>
+                  <span className='reshigh'>Authentication & Security</span>: Integrated Auth0 for secure user authentication and request authorization.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/forefarm', text: 'Backend' },
+                  { href: 'https://forefarm.darshangolchha.com', text: 'Webpage' }
+                ]} />
+              </div>
+              <SkillTags skills={['Python','Flask', 'MongoDB', 'React', 'Mapbox', 'Auth0', 'Machine Learning', 'Random Forest']} />
+            </VerticalTimelineElement>
 
+            <VerticalTimelineElement
+              date="July 2024 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #3498db',
+                position: 'relative', // Add this to position the SVG icon within the content
+              }}
+              icon={<img src="/assets/icons/infragen.png" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div style={{ position: 'relative' }}>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Infragen</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Work Project for Opstree Solutions</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Designed and implemented a sophisticated React-based dynamic form</span> to efficiently gather comprehensive infrastructure requirements from users. The form features intuitive questions tailored to determine the optimal technologies for building and deploying applications, enhancing user experience and accuracy in capturing project needs.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Integrated a robust backend API</span> using Python and Django for seamless form submission and real-time updates. Leveraged Google Gemini LLM with advanced prompt engineering to deliver actionable content, improving the precision of infrastructure recommendations.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Enabled interactive modifications</span> to the generated infrastructure design through a chat interface. Users can easily adjust the content without repetitive information entry, leading to a 40% reduction in manual input and increasing user satisfaction by 30%.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Implemented real-time context saving</span> to ensure smooth transitions and modifications without losing previous inputs, thus enhancing the application's responsiveness and user engagement.
+                </li>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Introduced High-Level Design (HLD) generation</span> feature, providing users with a visual overview of their service architecture. This feature has resulted in a 25% improvement in project planning accuracy and has been well-received for its clarity in presenting infrastructure layouts.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/ai-infragen-backend', text: 'Backend' },
+                  { href: 'https://github.com/darshan-golchha/ai-infragen', text: 'Frontend' },
+                  { href: 'https://infragen.darshangolchha.com', text: 'Webpage' }
+                ]} />
+              </div>
+              <SkillTags skills={['React', 'Python', 'Django', 'LLM', 'HTML', 'CSS', 'JavaScript', 'Caching']} />
+            </VerticalTimelineElement>
           </VerticalTimeline>
         </div>
       </div>

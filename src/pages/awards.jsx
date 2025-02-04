@@ -273,6 +273,41 @@ const awards = () => {
       <div className="flex flex-col p-8 pt-0">
         <div className='mt-0 flex'>
           <VerticalTimeline layout='1-column-left'>
+          <VerticalTimelineElement
+              date={<p>
+                <span className='font-semibold text-black'>August 2024</span>
+              </p>}
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid purple',
+                position: 'relative', // Add this to position the SVG icon within the content
+              }}
+              icon={<img src="/assets/icons/test.svg" alt="Project Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div style={{ position: 'relative' }}>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Sandeep Rawat</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Co-Founder and CTO at Opstree Solutions</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <blockquote class="border-l-4 border-gray-700 italic p-4 my-4">
+                  <p class="text-gray-900">Darshan interned with us on our product, BuildPiper, and the impact he made in such a short time was remarkable. His ability to conduct proof of concepts and explore new technologies is impressive, but what truly sets him apart is his sense of ownership and follow-through, like that of a seasoned professional. I highly recommend him as an ideal hire for any company and any domain.</p>
+                </blockquote>
+                <li className='text-black font-normal pl-1 text-small'>
+                  {/* Providing a link to the certificate */}
+                  <a href="https://www.linkedin.com/in/darshan-golchha/" target="_blank" rel="noreferrer" className='text-black-500 hover:text-blue-500'>View Testimonial</a>
+                </li>
+              </ul>
+            </VerticalTimelineElement>
+            
             <VerticalTimelineElement
               date={<p>
                 <span className='font-semibold text-black'>June 2023</span>
@@ -307,6 +342,7 @@ const awards = () => {
                 </li>
               </ul>
             </VerticalTimelineElement>
+
           </VerticalTimeline>
         </div>
       </div>

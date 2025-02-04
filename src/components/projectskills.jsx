@@ -29,6 +29,7 @@ const skillIconMap = {
     GitHub: '/assets/icons/github.svg',
     GitLab: '/assets/icons/gitlab.svg',
     BitBucket: '/assets/icons/bitbucket.png',
+    Flask: '/assets/icons/flask.png',
     // Add more skills and their icons here
 };
 

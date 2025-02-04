@@ -64,6 +64,15 @@ const About = () => {
             <img src="/assets/icons/spring.svg" alt="Spring Boot" className="w-16 h-16" />
             <p className="mt-4">Spring Boot</p>
           </div>
+          {/* Flask, Django */}
+          <div className="abt-box">
+            <img src="/assets/icons/flask.png" alt="Flask" className="w-16 h-16" />
+            <p className="mt-4">Flask</p>
+          </div>
+          <div className="abt-box">
+            <img src="/assets/icons/django.svg" alt="Django" className="w-16 h-16" />
+            <p className="mt-4">Django</p>
+          </div>
           {/* Rest API */}
           <div className="abt-box">
             <img src="/assets/icons/rest.svg" alt="Rest API" className="w-16 h-16" />
@@ -83,6 +92,15 @@ const About = () => {
           <div className="abt-box">
             <img src="/assets/icons/three.svg" alt="Three.js" className="w-16 h-16" />
             <p className="mt-4">Three.js</p>
+          </div>
+          {/* Docker, AWS, S3*/}
+          <div className="abt-box">
+            <img src="/assets/icons/docker.svg" alt="Docker" className="w-16 h-16" />
+            <p className="mt-4">Docker</p>
+          </div>
+          <div className="abt-box">
+            <img src="/assets/icons/aws.svg" alt="AWS" className="w-16 h-16" />
+            <p className="mt-4">AWS</p>
           </div>
         </div>
       </div>
