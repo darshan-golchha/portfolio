@@ -20,7 +20,7 @@ const renderContent = {
     ),
     4: (
         <Info
-        text={"Download my resume for an in-depth look at my skills, experiences, and achievements. Last Updated: 21st June, 2024"}
+        text={"Download my resume for an in-depth look at my skills, experiences, and achievements. Last Updated: 14th February 2025."}
         btnTxt={"Get My Resume"} link={"/assets/docs/Resume.pdf"} isExternal={true}
          />
     ),

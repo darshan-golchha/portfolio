@@ -112,7 +112,7 @@ const About = () => {
         <div className='mt-12 flex'>
           <VerticalTimeline layout="1-column-left">
             <VerticalTimelineElement
-              date="May 2024 - Present"
+              date="May 2024 - August 2024"
               iconStyle={{
                 background: '#3498db',
                 color: '#fff',

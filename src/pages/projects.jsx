@@ -216,7 +216,7 @@ const Projects = () => {
               }
             >
               <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'>ForeFarm</h3>
+                <h3 className='text-black text-xl font-semibold font-poppins'></h3>
                 <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>MadHacks Hackathon Project</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
