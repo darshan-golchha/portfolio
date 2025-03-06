@@ -24,6 +24,61 @@ const Projects = () => {
         <div className='mt-0 flex'>
           <VerticalTimeline layout="1-column-left">
             <VerticalTimelineElement
+              date="February 2025 - Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px dashed #3498db',
+                position: 'relative',
+              }}
+              icon={<img src="/assets/icons/forefarm.png" alt="E-Commerce Icon" className="w-8 h-8" style={{ borderRadius: '50%', width: '100%', height: '100%' }} />}
+            >
+              <div className="relative">
+                <span className="absolute top-0 right-7 bg-slate-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
+                  Webpage Coming Soon
+                </span>
+
+                <h3 className='text-black text-xl font-semibold font-poppins mt-2'>Anaj Bazaar</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>Personal Project</p>
+              </div>
+
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Developed End-to-End E-Commerce System</span>: Built a scalable platform with user authentication, product catalog, cart management, and order processing.
+                </li>
+                <li>
+                  <span className='reshigh'>Implemented Secure Authentication</span>: Integrated Email/Password and Google OAuth authentication for seamless and secure user access.
+                </li>
+                <li>
+                  <span className='reshigh'>Designed an Admin Panel</span>: Created a web-based dashboard for managing products, tracking orders, and overseeing customer interactions.
+                </li>
+                <li>
+                  <span className='reshigh'>Optimized Backend Performance</span>: Leveraged Java Spring Boot with MongoDB to ensure efficient database operations and fast API responses.
+                </li>
+                <li>
+                  <span className='reshigh'>Built a Mobile-First Shopping Experience</span>: Developed a React Native app using Expo for intuitive and responsive user interactions.
+                </li>
+              </ul>
+
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/anajbazaar-admin', text: 'Code - Admin Panel (Frontend)' },
+                  { href: 'https://github.com/darshan-golchha/anajbazaar', text: 'Code - App (Frontend)' },
+                  { href: 'https://github.com/darshan-golchha/anajbazaar-backend', text: 'Code - Backend' },
+                ]} />
+              </div>
+
+              <SkillTags skills={['React Native', 'Expo', 'Spring Boot', 'MongoDB', 'REST API', 'Google OAuth', 'Redux', 'React', 'Java', 'TypeScript']} />
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
               date="June 2024 - Present"
               iconStyle={{
                 background: 'white',
@@ -64,6 +119,57 @@ const Projects = () => {
                 ]} />
               </div>
               <SkillTags skills={['SonarQube', 'SonarCloud', 'Python', 'JavaScript', 'Docker', 'Django', 'Java', 'SpringBoot', 'RestAPI', 'LLM', 'sklearn', 'MySQL', 'HTML', 'CSS']} />
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              date="March 2025"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #1E90FF',
+              }}
+              icon={
+                <img
+                  src="/assets/icons/shell.png"
+                  alt="Unix Shell Icon"
+                  className="w-4 h-4"
+                  style={{ borderRadius: '0%', width: '100%', height: '100%' }}
+                />
+              }
+            >
+              <div>
+                <h3 className='text-black text-xl font-semibold font-poppins'>Unix Shell (WSH)</h3>
+                <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>CS 537 Operating Systems Project</p>
+              </div>
+              <ul className='my-5 list-disc ml-5 space-y-2'>
+                <li className='text-black font-normal pl-1 text-small'>
+                  <span className='reshigh'>Command Execution</span>: Implemented a Unix shell capable of executing external commands and built-in functionality like export, local, vars, ls, and ps.
+                </li>
+                <li>
+                  <span className='reshigh'>Process Management</span>: Developed robust process creation, management, and communication systems using fork(), exec(), wait(), and pipes.
+                </li>
+                <li>
+                  <span className='reshigh'>Variable Handling</span>: Created systems for environment and shell variable management with proper substitution, precedence rules, and display.
+                </li>
+                <li>
+                  <span className='reshigh'>Pipeline Support</span>: Built pipe functionality allowing multiple commands to be chained together with output of one command feeding as input to the next.
+                </li>
+                <li>
+                  <span className='reshigh'>Command Substitution</span>: Implemented nested command substitution allowing outputs of commands to replace command text.
+                </li>
+              </ul>
+              <div className='top-0 right-0 absolute flex gap-6 rounded-lg p-1'>
+                <DropdownMenu links={[
+                  { href: 'https://github.com/darshan-golchha/shell', text: 'Source Code' }
+                ]} />
+              </div>
+              <SkillTags skills={['C', 'Unix', 'Process Management', 'IPC', 'System Calls', 'Memory Management']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
               date="June 2023 - Present"
@@ -140,7 +246,7 @@ const Projects = () => {
               <SkillTags skills={['Java', 'SpringBoot', 'RestAPI', 'MongoDB', 'HTML', 'CSS', 'JavaScript', 'React', 'WebSocket', 'S3', 'AWS']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              date="January 2025 - Present"
+              date="October 2024 - Present"
               iconStyle={{
                 background: 'white',
                 color: '#fff',
@@ -193,7 +299,7 @@ const Projects = () => {
               <SkillTags skills={['React', 'Flask', 'Python', 'JavaScript', 'Game Theory', 'Minimax', 'Alpha-Beta Pruning']} />
             </VerticalTimelineElement>
             <VerticalTimelineElement
-              date="March 2024"
+              date="November 2024"
               iconStyle={{
                 background: 'white',
                 color: '#fff',
@@ -216,7 +322,7 @@ const Projects = () => {
               }
             >
               <div>
-                <h3 className='text-black text-xl font-semibold font-poppins'></h3>
+                <h3 className='text-black text-xl font-semibold font-poppins'>ForeFarm</h3>
                 <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>MadHacks Hackathon Project</p>
               </div>
               <ul className='my-5 list-disc ml-5 space-y-2'>
@@ -239,7 +345,7 @@ const Projects = () => {
                   { href: 'https://forefarm.darshangolchha.com', text: 'Webpage' }
                 ]} />
               </div>
-              <SkillTags skills={['Python','Flask', 'MongoDB', 'React', 'Mapbox', 'Auth0', 'Machine Learning', 'Random Forest']} />
+              <SkillTags skills={['Python', 'Flask', 'MongoDB', 'React', 'Mapbox', 'Auth0', 'Machine Learning', 'Random Forest']} />
             </VerticalTimelineElement>
 
             <VerticalTimelineElement

@@ -25,7 +25,7 @@ const DropdownMenu = ({ links }) => {
   return (
     <div className="relative top-0 right-0 flex gap-6 rounded-lg p-1" ref={dropdownRef}>
       <button onClick={toggleDropdown} className="focus:outline-none animate-pulse active:scale-90 hover:animate-none">
-        <img src="/assets/icons/goto.png" alt="Options" className="w-6 h-6" />
+        <img src="/assets/icons/goto.png" alt="Options" className="w-8 h-8" />
       </button>
       <div
         className={`absolute right-0 top-5 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg 

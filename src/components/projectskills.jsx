@@ -30,6 +30,7 @@ const skillIconMap = {
     GitLab: '/assets/icons/gitlab.svg',
     BitBucket: '/assets/icons/bitbucket.png',
     Flask: '/assets/icons/flask.png',
+    ReactNative: '/assets/icons/react.svg',
     // Add more skills and their icons here
 };
 
