@@ -26,11 +26,17 @@ const skillIconMap = {
     Caching: '/assets/icons/cache.png',
     AWS: '/assets/icons/aws.svg',
     S3: '/assets/icons/s3.svg',
+    'GitHub Actions': '/assets/icons/github.svg',
     GitHub: '/assets/icons/github.svg',
     GitLab: '/assets/icons/gitlab.svg',
     BitBucket: '/assets/icons/bitbucket.png',
     Flask: '/assets/icons/flask.png',
     ReactNative: '/assets/icons/react.svg',
+    Firebase: '/assets/icons/firebase.png',
+    'Redux Toolkit': '/assets/icons/redux.png',
+    'Twilio Conversations': '/assets/icons/twilio.png',
+    FCM: '/assets/icons/firebase.png',
+    GCP: '/assets/icons/gcp.png',
     // Add more skills and their icons here
 };
 

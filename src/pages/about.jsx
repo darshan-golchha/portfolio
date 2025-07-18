@@ -102,6 +102,35 @@ const About = () => {
             <img src="/assets/icons/aws.svg" alt="AWS" className="w-16 h-16" />
             <p className="mt-4">AWS</p>
           </div>
+          <div className="abt-box">
+            <img src="/assets/icons/s3.svg" alt="S3" className="w-16 h-16" />
+            <p className="mt-4">S3</p>
+          </div>
+          {/* Twilio, GCP, Firebase */}
+
+          <div className="abt-box">
+            <img src="/assets/icons/twilio.png" alt="twilio" className="w-16 h-16" />
+            <p className="mt-4">Twilio</p>
+          </div>
+          <div className="abt-box">
+            <img src="/assets/icons/gcp.png" alt="S3" className="w-16 h-16" />
+            <p className="mt-4">GCP</p>
+          </div>
+          <div className="abt-box">
+            <img src="/assets/icons/firebase.png" alt="S3" className="w-16 h-16" />
+            <p className="mt-4">Firebase</p>
+          </div>
+
+
+          {/* GitHub, GitLab, BitBucket */}
+          <div className="abt-box">
+            <img src="/assets/icons/github.svg" alt="GitHub" className="w-16 h-16" />
+            <p className="mt-4">GitHub</p>
+          </div>
+          <div className="abt-box">
+            <img src="/assets/icons/gitlab.svg" alt="GitLab" className="w-16 h-16" />
+            <p className="mt-4">GitLab</p>
+          </div>
         </div>
       </div>
       <div className="py-16 bg-black p-8">
@@ -111,6 +140,63 @@ const About = () => {
         </div>
         <div className='mt-12 flex'>
           <VerticalTimeline layout="1-column-left">
+            <VerticalTimelineElement
+              date="May 2025 – Present"
+              iconStyle={{
+                background: 'white',
+                color: '#fff',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                boxShadow: 'none',
+              }}
+              contentStyle={{
+                boxShadow: 'none',
+                borderBottom: '12px solid #2c3e50'
+              }}
+              icon={
+                <img
+                  src="/assets/icons/rsys.png"
+                  alt="React"
+                  className="w-12 h-12"
+                  style={{ borderRadius: '10%', width: '70%', height: '70%' }}
+                />
+              }
+            >
+              <div>
+                <h3 className="text-black text-xl font-semibold font-poppins">Software Engineer Intern</h3>
+                <p className="text-black-500 font-medium font-base" style={{ margin: 0 }}>R Systems</p>
+              </div>
+              <ul className="my-5 list-disc ml-5 space-y-2">
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Developed a fully functional chat application</span> using React Native, Twilio Conversations, and Spring Boot, supporting one-to-one and group messaging, media sharing, and push notifications.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Set up CI/CD pipelines for both Android and iOS</span> using GitHub Actions, automating builds and deployments and reducing manual overhead by over 70%.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Implemented Redux Toolkit for managing API calls and application state</span>, resulting in cleaner code structure and improved performance across chat features.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Integrated Firebase Cloud Messaging (FCM) with custom webhook-based notifications</span>, overcoming Twilio’s FCM limitations and enabling real-time delivery of chat messages.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Deployed backend APIs on Google Cloud Platform (GCP)</span> using Spring Boot, providing a secure, scalable, and production-ready infrastructure.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Resolved critical UI/UX issues</span> such as responsive design bugs, keyboard overlap, and re-rendering glitches to improve user experience on Android.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Enhanced messaging interface</span> with media/document sharing, image preview on tap, and deep linking from notifications for WhatsApp-like behavior.
+                </li>
+                <li className="text-black font-normal pl-1 text-small">
+                  <span className='reshigh'>Built dynamic environment configuration</span> using `react-native-config`, allowing seamless switching between dev and production environments.
+                </li>
+              </ul>
+              <SkillTags skills={['ReactNative', 'Java', 'SpringBoot', 'Firebase', 'Redux Toolkit', 'GitHub Actions', 'Twilio Conversations', 'RestAPI', 'FCM', 'GCP']} />
+            </VerticalTimelineElement>
+
+
             <VerticalTimelineElement
               date="May 2024 - August 2024"
               iconStyle={{
