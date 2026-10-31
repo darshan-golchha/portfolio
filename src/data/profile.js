@@ -6,11 +6,11 @@ export const profile = {
   // Shown as a live clock in the footer.
   location: 'Madison, WI',
   timeZone: 'America/Chicago',
-  email: 'dgolchha@wisc.edu',
+  email: 'darshan@relixa.ai',
   links: [
     { label: 'GitHub', href: 'https://github.com/darshan-golchha' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/darshan-golchha/' },
-    { label: 'Email', href: 'mailto:dgolchha@wisc.edu' },
+    { label: 'Email', href: 'mailto:darshan@relixa.ai' },
   ],
   // Logo plates in the home hero.
   affiliations: [
