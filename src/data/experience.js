@@ -1,0 +1,47 @@
+// Newest first.
+export const experience = [
+  {
+    role: 'Software Engineer Intern',
+    company: 'R Systems',
+    dates: 'May 2025 – August 2025',
+    bullets: [
+      'Developed a fully functional chat application using React Native, Twilio Conversations, and Spring Boot, supporting one-to-one and group messaging, media sharing, and push notifications.',
+      'Set up CI/CD pipelines for both Android and iOS using GitHub Actions, automating builds and deployments and reducing manual overhead by over 70%.',
+      'Implemented Redux Toolkit for managing API calls and application state, resulting in cleaner code structure and improved performance across chat features.',
+      'Integrated Firebase Cloud Messaging (FCM) with custom webhook-based notifications, overcoming Twilio’s FCM limitations and enabling real-time delivery of chat messages.',
+      'Deployed backend APIs on Google Cloud Platform (GCP) using Spring Boot, providing a secure, scalable, and production-ready infrastructure.',
+      'Resolved critical UI/UX issues such as responsive design bugs, keyboard overlap, and re-rendering glitches to improve user experience on Android.',
+      'Enhanced messaging interface with media/document sharing, image preview on tap, and deep linking from notifications for WhatsApp-like behavior.',
+      'Built dynamic environment configuration using `react-native-config`, allowing seamless switching between dev and production environments.',
+    ],
+    tech: ['React Native', 'Java', 'Spring Boot', 'Firebase', 'Redux Toolkit', 'GitHub Actions', 'Twilio Conversations', 'REST API', 'FCM', 'GCP'],
+  },
+  {
+    role: 'Software Engineering and Machine Learning Intern',
+    company: 'Opstree Solutions',
+    dates: 'May 2024 – August 2024',
+    bullets: [
+      'Pioneered a Dynamic React-Based Form: Designed and implemented a sophisticated React-based form to efficiently gather detailed infrastructure requirements, enhancing user experience and project accuracy.',
+      'Integrated Advanced Backend API: Developed a robust backend using Python and Django, incorporating Google Gemini LLM for precise and actionable infrastructure recommendations, significantly improving real-time updates and form submissions.',
+      'Enabled Interactive Infrastructure Adjustments: Introduced a chat-based interface allowing users to modify generated infrastructure designs interactively, reducing manual input by 40% and increasing user satisfaction by 30%.',
+      'Optimized Code Quality and Review Processes: Combined SonarQube and SonarCloud to create a comprehensive code quality platform, and deployed a Bug Frequency Server and LLM integration to cut critical production bugs by 40% and enhance review efficiency by 50%.',
+      'Enhanced CI/CD Pipeline and Severity Indexing: Developed a multi-faceted severity calculator and streamlined SonarCloud setup, resulting in a 30% improvement in issue prioritization and a 60% reduction in manual review time.',
+      'Integrated Multi-VCS Support: Built a system to fetch and analyze pull requests from GitLab, GitHub, and Bitbucket, simplifying multi-repository management and ensuring compatibility across major version control systems.',
+      'Implemented Robust Anomaly Detection: Designed an anomaly detection system using sklearn Isolation Forest to monitor critical metrics, improving proactive system management and identifying unusual patterns effectively.',
+    ],
+    tech: ['SonarQube', 'SonarCloud', 'Python', 'JavaScript', 'Docker', 'Django', 'Java', 'Spring Boot', 'REST API', 'LLM', 'sklearn', 'MySQL', 'HTML', 'CSS', 'Bitbucket'],
+  },
+  {
+    role: 'Software Engineering Intern',
+    company: 'Nucleus Software Exports Limited',
+    dates: 'June 2023 – August 2023',
+    bullets: [
+      'Developed Nucleopedia, a knowledge-based management system that centralizes work-related knowledge and training, resulting in a significant 70% reduction in onboarding time for over 1500 employees.',
+      'Designed and implemented a network of interconnected database tables utilizing MySQL to normalize data, enhancing data management efficiency and retrieval speed. Achieved a remarkable 75% reduction in latency, optimizing system performance and ensuring seamless data access.',
+      'Successfully implemented Spring Security and JWT, showcasing problem-solving skills by identifying and mitigating security threats, resulting in a 98% reduction in unauthorized access.',
+      'Utilized JPA repository and Jakarta.persistence methods to build an efficient search engine, improving UX.',
+      'Demonstrated adaptability by rapidly learning and implementing React and REST API, contributing to a 60% reduction in reload time for the web application.',
+    ],
+    tech: ['Java', 'Spring Boot', 'REST API', 'MySQL', 'HTML', 'CSS', 'JavaScript', 'React', 'AWS', 'S3'],
+  },
+];
