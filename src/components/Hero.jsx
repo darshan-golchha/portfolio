@@ -1,57 +1,28 @@
-import { useLayoutEffect, useRef } from 'react';
 import { profile } from '../data/profile';
+import Terrain from './Terrain';
 import LinkList from './LinkList';
-import LocalTime from './LocalTime';
-
-// Scales the element's font size so its text spans the full width of its parent.
-const useFitToWidth = () => {
-  const ref = useRef(null);
-
-  useLayoutEffect(() => {
-    const el = ref.current;
-    const container = el.parentElement;
-    const fit = () => {
-      el.style.fontSize = '100px';
-      el.style.fontSize = `${(100 * container.clientWidth) / el.offsetWidth}px`;
-    };
-
-    fit();
-    const observer = new ResizeObserver(fit);
-    observer.observe(container);
-    document.fonts?.ready.then(fit);
-    return () => observer.disconnect();
-  }, []);
-
-  return ref;
-};
+import Affiliations from './Affiliations';
 
 const Hero = () => {
-  const wordmarkRef = useFitToWidth();
+  const [first, ...rest] = profile.name.split(' ');
 
   return (
-    <div className="hero-shell">
-      <section className="hero">
-        <div className="glow" aria-hidden="true" />
+    <section className="hero">
+      <Terrain />
+      <div className="hero-fade" aria-hidden="true" />
 
-        <div className="hero-statement">
-          <p className="eyebrow">Hi, I'm {profile.name}</p>
-          <h1>{profile.tagline}</h1>
-          <p>{profile.intro}</p>
-          <LinkList links={profile.links} />
-        </div>
+      <div className="hero-content">
+        <h1 className="hero-name">
+          {first}
+          <br />
+          {rest.join(' ')}
+          <span className="accent">.</span>
+        </h1>
+        <LinkList links={profile.links} />
+      </div>
 
-        <div className="hero-bottom">
-          <div className="hero-meta eyebrow">
-            <span>Portfolio — {new Date().getFullYear()}</span>
-            <LocalTime />
-            <a className="scroll-cue" href="#experience">Scroll to explore ↓</a>
-          </div>
-          <span className="wordmark" ref={wordmarkRef} aria-hidden="true">
-            {profile.name.split(' ')[0]}
-          </span>
-        </div>
-      </section>
-    </div>
+      <Affiliations />
+    </section>
   );
 };
 

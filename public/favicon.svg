@@ -1,12 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <radialGradient id="glow" cx="28%" cy="82%" r="85%">
+    <radialGradient id="dot" cx="38%" cy="36%" r="70%">
       <stop offset="0" stop-color="#ffc4a3"/>
-      <stop offset="0.3" stop-color="#ff6a3d"/>
-      <stop offset="0.62" stop-color="#e8261b"/>
-      <stop offset="1" stop-color="#050505"/>
+      <stop offset="0.5" stop-color="#ff6a3d"/>
+      <stop offset="1" stop-color="#e8261b"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0.45" stop-color="#ff6a3d" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="#050505"/>
-  <circle cx="32" cy="32" r="20" fill="url(#glow)"/>
+  <rect width="64" height="64" rx="16" fill="#060505"/>
+  <circle cx="32" cy="32" r="24" fill="url(#halo)"/>
+  <circle cx="32" cy="32" r="13" fill="url(#dot)"/>
 </svg>

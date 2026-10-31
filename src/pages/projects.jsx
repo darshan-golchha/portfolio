@@ -1,4 +1,6 @@
 import { featuredProjects, archivedProjects } from '../data/projects';
+import { experience } from '../data/experience';
+import ExperienceList from '../components/ExperienceList';
 import ProjectCard from '../components/ProjectCard';
 import LinkList from '../components/LinkList';
 import { Bullets, Chips, PageHeader, SectionHead } from '../components/Bits';
@@ -11,6 +13,11 @@ const Projects = () => {
       </PageHeader>
 
       <div className="container">
+        <section id="experience" className="section">
+          <SectionHead title="Experience" count={experience.length} />
+          <ExperienceList />
+        </section>
+
         <section className="section">
           <SectionHead title="Selected work" count={featuredProjects.length} />
           <div className="card-stack">

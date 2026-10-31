@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { profile } from '../data/profile';
 
-// Live clock for profile.location, with a sun or moon depending on the hour there.
-const LocalTime = ({ className = '' }) => {
+// Live 24-hour clock for profile.location, e.g. "14:50 CDT · Madison, WI".
+const LocalTime = () => {
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
@@ -10,14 +10,18 @@ const LocalTime = ({ className = '' }) => {
     return () => clearInterval(id);
   }, []);
 
-  const { timeZone, location } = profile;
-  const time = new Intl.DateTimeFormat('en-US', { hour: '2-digit', minute: '2-digit', timeZone }).format(now);
-  const hour = Number(new Intl.DateTimeFormat('en-US', { hour: 'numeric', hourCycle: 'h23', timeZone }).format(now));
-  const isDay = hour >= 6 && hour < 18;
+  const time = new Intl.DateTimeFormat('en-US', {
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+    timeZone: profile.timeZone,
+    timeZoneName: 'short',
+  }).format(now);
 
   return (
-    <span className={`local-time ${className}`}>
-      <span aria-hidden="true">{isDay ? '☀' : '☾'}</span> {time} {location}
+    <span className="local-time">
+      <span className="live-dot" aria-hidden="true" />
+      {time} · {profile.location}
     </span>
   );
 };

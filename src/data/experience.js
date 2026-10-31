@@ -1,6 +1,19 @@
 // Newest first.
 export const experience = [
   {
+    role: 'Co-founder & CEO',
+    company: 'Relixa',
+    dates: 'August 2026 – Present',
+    bullets: [
+      'Co-founded Relixa Systems Inc., which brings UW–Madison’s entity matching research to enterprise data workflows.',
+      'Developed Relixa’s matching technology with AnHai Doan, leading its implementation, engineering and benchmarking, and turning a research breakthrough into a practical engine for fast, economical matching at scale.',
+      'Building high-performance entity matching engines that find records across disparate data sources referring to the same customer, company, product or supplier.',
+      'Latest performance breakthrough: up to 30× faster entity matching, with 1 billion records matched in under 3 hours for under $100 in computing cost.',
+      'Relixa’s products include Sparkly for blocking and Iris for matching.',
+    ],
+    tech: ['Entity Matching', 'Blocking', 'Apache Spark', 'Parallel Computing', 'Databases', 'Benchmarking'],
+  },
+  {
     role: 'Software Engineer Intern',
     company: 'R Systems',
     dates: 'May 2025 – August 2025',

@@ -1,4 +1,5 @@
 // Small shared building blocks.
+import Contours from './Contours';
 
 export const Bullets = ({ items }) => (
   <ul className="bullets">
@@ -20,9 +21,10 @@ export const SectionHead = ({ title, count }) => (
   </div>
 );
 
-// Big title block at the top of inner pages.
+// Big title block at the top of inner pages, over topographic contours.
 export const PageHeader = ({ eyebrow, title, children }) => (
   <header className="page-header container">
+    <Contours />
     <p className="eyebrow">{eyebrow}</p>
     <h1 className="page-title">{title}</h1>
     {children && <p className="page-intro">{children}</p>}
